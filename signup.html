@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="signup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+</head>
+<body>
+<div class="signup-container">
+  <div class="signup-header">Sign Up</div>
+     <form>
+    <label for="fname">First Name:</label>
+    <input type="text" id="fname" name="fname" required>
+    <br>
+    <label for="lname">Last Name:</label>
+    <input type="text" id="lname" name="lname" required>
+    <br>
+    <label for="phone">Phone Number:</label>
+    <input type="text" id="phone" name="phone" required>
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+    <span class="show-password" onclick="showPassword()">🙈</span>
+    <br>
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" required>
+    <span class="show-password" onclick="showPassword()">🙈</span>
+    <br>
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" required>
+    <br>
+    <label for="state">State:</label>
+    <input type="text" id="state" name="state" required>
+    <br>
+    <label for="city">City:</label>
+    <input type="text" id="city" name="city" required>
+    <br>
+    <label for="pin">Pin Code:</label>
+    <input type="text" id="pin" name="pin" required>
+    <br>
+    <input type="submit" value="Enter" onclick="location.href='nextpage.html';">
+  </form>
+</div>
+  <script>
+    function showPassword() {
+      var x = document.getElementById("password");
+      var y = document.getElementById("confirm-password");
+      if (x.type === "password" || y.type === "password") {
+        x.type = "text";
+        y.type = "text";
+      } else {
+        x.type = "password";
+        y.type = "password";
+      }
+    }
+  </script>
+</body>
+</html>
