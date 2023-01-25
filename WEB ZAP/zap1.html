@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="zap1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div class="signin-container">
+      <div class="signin-header">Sign In</div>
+      <form>
+        <label for="userid">User ID:</label>
+        <input type="text" id="userid" name="userid" required>
+        <br>
+        <label for="phonenumber">Phone Number:</label>
+        <input type="tel" id="phonenumber" name="phonenumber" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <span class="show-password" onclick="showPassword()">🙈</span>
+        <br>
+        <input type="submit" value="Enter" onclick="location.href='nextpage.html';">
+      </form>
+    </div>
+    <script>
+      function showPassword() {
+      var x = document.getElementById("password");
+      if (x.type === "password" ) {
+        x.type = "text";
+      } else {
+        x.type = "password";
+        
+      }
+    }
+    </script>
+  </body>
+</html>

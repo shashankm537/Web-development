@@ -1,0 +1,60 @@
+body {
+    background-image: url("yellow-taxi-new-york-city-usa-115345108-transformed (1).jpeg.jpg");
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh; 
+  }
+  
+  .signin-container {
+    
+    width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 10px;
+  }
+
+  .signin-header {
+    text-align: center;
+    color: green;
+    font-size: 45px;
+    margin-bottom: 10px;
+    }
+  
+  form {
+    margin-top: 10px;
+  }
+  
+  label {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"], input[type="tel"], input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin-bottom: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .show-password {
+    cursor: pointer;
+    margin-left: 10px;
+  }
