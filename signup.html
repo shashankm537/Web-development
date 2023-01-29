@@ -41,21 +41,9 @@
     <label for="pin">Pin Code:</label>
     <input type="text" id="pin" name="pin" required>
     <br>
-    <input type="submit" value="Enter" onclick="location.href='nextpage.html';">
+    <input type="submit" value="Enter" onclick="validateForm()">
   </form>
 </div>
-  <script>
-    function showPassword() {
-      var x = document.getElementById("password");
-      var y = document.getElementById("confirm-password");
-      if (x.type === "password" || y.type === "password") {
-        x.type = "text";
-        y.type = "text";
-      } else {
-        x.type = "password";
-        y.type = "password";
-      }
-    }
-  </script>
+<script src="signup.js"></script>
 </body>
 </html>
